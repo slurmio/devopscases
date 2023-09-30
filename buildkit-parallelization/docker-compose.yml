@@ -1,0 +1,10 @@
+services:
+  app:
+    image: app
+    build:
+      context: .
+    environment:
+      - APP_SIGN_ALGO=HmacSHA256
+      - APP_SIGN_KEY=073b9ce8277c4d70dba2edf33e80f6a2bde0dbd7e5c9d149ccc20ba8b125129b
+    ports:
+      - '8080:8080'

@@ -1,0 +1,30 @@
+.lib-counter {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.lib-counter--primary {
+  color: white;
+  background-color: #8a73fc;
+  border: 1px solid #8a73fc;
+}
+.lib-counter--secondary {
+  color: #172b4d;
+  background-color: transparent;
+  border: 1px solid #172b4d;
+}
+.lib-counter--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.lib-counter--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.lib-counter--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}

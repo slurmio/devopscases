@@ -1,0 +1,514 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [
+        {
+            "name": "ComponentsService",
+            "id": "injectable-ComponentsService-1a68e5ab8060ac18996868bd337f39aafb46491a3144134c587d69dfd820cf07ba62295c1f88df06847e3ef997966d1275f1d740fea7c0054af98562a751c5c8",
+            "file": "projects/components/src/lib/components.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class ComponentsService {\n}\n",
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "ComponentsComponent",
+            "id": "component-ComponentsComponent-9ab62237a9b0bb4002405ad11127778bede646e1f7acafd99d9501b37bd21cd6b3ef9f89e57bab0c22f531acb1df42d8f2e139a6066634bf5afca0f4c9fe0106",
+            "file": "projects/components/src/lib/components.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-components",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  components works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-components',\n  template: `\n    <p>\n      components works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class ComponentsComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": ""
+        },
+        {
+            "name": "CounterComponent",
+            "id": "component-CounterComponent-dec7b5f254e9a70b3d288a731a015e80650bffd879b0a1e82602958e0cf740d2879ae92e4b810aa8e3b7927c7146a7f7f768bc6f8fef3630e2f9b766a0945adf",
+            "file": "projects/components/src/lib/counter/counter.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-counter",
+            "styleUrls": [
+                "./counter.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./counter.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "prefix",
+                    "defaultValue": "'lib-counter'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "testid",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "increase",
+                    "defaultValue": "new EventEmitter<number>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "onClick",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'lib-counter',\n  templateUrl: './counter.component.html',\n  styleUrls: ['./counter.component.css']\n})\nexport class CounterComponent {\n  @Input() prefix = 'lib-counter';\n  @Input() primary = true;\n  @Input() size : 'small' | 'medium' | 'large' = 'medium';\n  @Input() testid = '';\n  @Input() type = '';\n  @Input() disabled = false;\n  @Input() value = 0;\n  @Output() increase = new EventEmitter<number>();\n\n  public get classes(): string[] {\n    return [this.prefix, `${this.prefix}--${this.size}`, `${this.prefix}--${this.primary ? 'primary' : 'secondary'}`];\n  }\n\n  onClick($event: Event) {\n    $event.preventDefault();\n    this.value++;\n    console.log('click');\n    this.increase.emit(this.value);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".lib-counter {\n  font-family: Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border-radius: 5px;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.lib-counter--primary {\n  color: white;\n  background-color: #8a73fc;\n  border: 1px solid #8a73fc;\n}\n.lib-counter--secondary {\n  color: #172b4d;\n  background-color: transparent;\n  border: 1px solid #172b4d;\n}\n.lib-counter--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.lib-counter--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.lib-counter--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./counter.component.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 18
+                    }
+                }
+            },
+            "templateData": "<span>\n\t<button\n\t\t(click)=\"onClick($event)\"\n\t\t[attr.data-testid]=\"testid\"\n\t\t[type]=\"type\"\n\t\t[disabled]=\"disabled\"\n\t\t[ngClass]=\"classes\"\n\t>{{value}}</button>\n</span>"
+        }
+    ],
+    "modules": [
+        {
+            "name": "ComponentsModule",
+            "id": "module-ComponentsModule-924be5c2c6949aeeed9a9848432fce6586816afa3ae2cd3df16a25531ff649d8148ee6c33be3454bf97abde0ea1c5a746d39eb875b0e0fdd60687b3e45c430bd",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/components/src/lib/components.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { ComponentsComponent } from './components.component';\nimport { CounterComponent } from './counter/counter.component';\n\n\n\n@NgModule({\n  declarations: [\n    ComponentsComponent,\n    CounterComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    ComponentsComponent\n  ]\n})\nexport class ComponentsModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ComponentsComponent"
+                        },
+                        {
+                            "name": "CounterComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ComponentsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "LargeCounter",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 'large',\n    value: 999,\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<CounterComponent>",
+                "defaultValue": "{\n  title: 'Example/CounterComponent',\n  component: CounterComponent,\n  tags: ['autodocs'],\n  render: (args: CounterComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "preview",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/.storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Preview",
+                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "PrimaryCounter",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    primary: true,\n    value: 1,\n  },\n}"
+            },
+            {
+                "name": "SecondaryCounter",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    primary: false,\n    value: 1,\n  },\n}"
+            },
+            {
+                "name": "SmallCounter",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 'small',\n    value: 9,\n  },\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<CounterComponent>",
+                "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/components/src/lib/counter/counter.component.stories.ts": [
+                {
+                    "name": "LargeCounter",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'large',\n    value: 999,\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<CounterComponent>",
+                    "defaultValue": "{\n  title: 'Example/CounterComponent',\n  component: CounterComponent,\n  tags: ['autodocs'],\n  render: (args: CounterComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                },
+                {
+                    "name": "PrimaryCounter",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    primary: true,\n    value: 1,\n  },\n}"
+                },
+                {
+                    "name": "SecondaryCounter",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    primary: false,\n    value: 1,\n  },\n}"
+                },
+                {
+                    "name": "SmallCounter",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'small',\n    value: 9,\n  },\n}"
+                }
+            ],
+            "projects/components/.storybook/preview.ts": [
+                {
+                    "name": "preview",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/components/.storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Preview",
+                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "projects/components/src/lib/counter/counter.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<CounterComponent>",
+                    "file": "projects/components/src/lib/counter/counter.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ]
+        }
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/components/.storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/components.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ComponentsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/components.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "ComponentsService",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LargeCounter",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrimaryCounter",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SecondaryCounter",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/counter/counter.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SmallCounter",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/counter/counter.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CounterComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            }
+        ]
+    }
+}
