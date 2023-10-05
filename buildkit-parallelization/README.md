@@ -62,3 +62,7 @@ b4a5151c4d6939f8df7febe32ac94c3ce0f61112cbe1d8df0e51d7f2c4d9618b
 ## Реализация
 
 В качестве реализации CI/CD пайплайна и Docker Registry можно использовать любые, например (из облачных и бесплатных), [GitHub Actions](https://docs.github.com/en/actions) и [GitHub Packages](https://docs.github.com/packages)
+
+# Разборы
+
+* 24.10.2023 &ndash; Максим Суслов ([Видео на YouTube](https://www.youtube.com/watch?v=VVSLdUfa_Js), [Репо на GitHub](https://github.com/maxx27/slurm-devopscases/tree/buildkit-parallelization-solution))
