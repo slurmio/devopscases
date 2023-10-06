@@ -21,3 +21,4 @@
 * [BuildKit Parallelization](buildkit-parallelization/)
 * [Angular Storybook](angular-storybook/)
 * [Gradle Application](gradle-application/)
+* [GraalVM Native Image - Static](graalvm-native-image-static/)
