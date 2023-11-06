@@ -1,11 +1,22 @@
-FROM eclipse-temurin@sha256:831f00e903bf888787b8ffd1bf5252e5903e1b19d5bc17f7e5b9761ffec11785 AS builder
+FROM eclipse-temurin:17-jdk AS package
 WORKDIR /opt/build
 COPY . .
-RUN ./mvnw --no-transfer-progress --batch-mode verify
+RUN ./mvnw --no-transfer-progress --batch-mode -Dmaven.test.skip package
 
-FROM eclipse-temurin@sha256:831f00e903bf888787b8ffd1bf5252e5903e1b19d5bc17f7e5b9761ffec11785 AS release
+FROM package AS test
+RUN ./mvnw --no-transfer-progress --batch-mode test
+RUN touch .faky-test
+
+FROM package AS verify
+# Чтобы пропустить долгий maven dependency check, добавьте -Ddependency-check.skip
+RUN ./mvnw --no-transfer-progress --batch-mode -Dassembly.skipAssembly -Dmaven.test.skip verify
+RUN touch .faky-verify
+
+FROM eclipse-temurin:17-ubi9-minimal AS release
 WORKDIR /opt/app
-COPY --from=builder /opt/build/target/app.jar .
+COPY --from=package /opt/build/target/app.jar .
+COPY --from=test /opt/build/.faky-test /dev/null
+COPY --from=verify /opt/build/.faky-verify /dev/null
 
 ENV APP_SIGN_ALGO HmacSHA256
 ENV APP_SIGN_KEY 073b9ce8277c4d70dba2edf33e80f6a2bde0dbd7e5c9d149ccc20ba8b125129b
